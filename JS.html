@@ -10,9 +10,9 @@
     <p></p>
 
     <script>
-      // console.log("hello World")
+      // console.log("hello World");
 
-      // console.log('hello World');
+      // console.log("hello World");
 
       // console.log(14);
 
@@ -23,35 +23,53 @@
 
       // var,let,const
 
-      //   var age = 25;
-      //   console.log(age);
+      // var age = 25;
+      // console.log(age);
 
-      //   var age = 30;
-      //   console.log(age);
+      // var age = 30;
+      // console.log(age);
 
-      //   let name = "Param";
-      //   console.log(name);
+      // let name = "Param";
+      // console.log(name);
 
-      //   // let name = "john"
-      //   console.log(name);
+      // let name = "john";
+      // console.log(name);
 
-      //   const id = 2;
-      //   console.log(id);
+      // const id = 2;
+      // console.log(id);
 
-      // const id = 4
+      // const id = 4;
       // console.log(id);
 
       // let name = "John"
 
       // let multipleItems = "John","MAX",12
 
-      //   let multipleItems = ["John", "MAX", 1343, "76576", true];
-      //   console.log(multipleItems);
+      //array
+
+      // let multipleItems = ["John", "MAX", 1343, "76576", true];
+
+      // let multipleItems1 = ["John", "MAX", 1343, "76576", true];
+      // console.log(multipleItems1);
 
       //   console.log(multipleItems[0]);
+
+      // //   console.log(multipleItems[0]);
       //   console.log(multipleItems[4]);
 
       //   console.log(multipleItems[6]);
+
+      // let multipleItems2 = {
+      //   firstname: "Param",
+      //   age: 24,
+      //   address: "LDH",
+      // };
+
+      // console.log(multipleItems2);
+
+      // console.log(multipleItems2.firstname);
+      // console.log(multipleItems2.age);
+      // console.log(multipleItems2.console);
 
       //   const multipleItems2 = {
       //     name: "Param",
@@ -63,25 +81,33 @@
       //   console.log(multipleItems2.age);
       //   console.log(multipleItems2.country);
 
-      //   let mix = [
-      //     "JOHN",
-      //     123,
-      //     true,
-      //     { name: "param", age: 25 },
-      //     ["hello", false, 8798],
-      //   ];
+      // let mix = [
+      //   "JOHN",
+      //   123,
+      //   true,
+      //   { name: "param", age: 25 },
+      //   ["hello", false, 8798],
+      // ];
 
       //   console.log(mix);
+
+      //   console.log(mix[3].age);
+      //   console.log(mix[4][1]);
       //   console.log(mix[3].age);
       //   console.log(mix[4][1]);
 
-      //   let mix2 = {
-      //     str: "Hello World",
-      //     num: 12,
-      //     arr: [123, true, "hello"],
-      //     object1: { name: "param", age: 25 },
-      //   };
+        // let mix2 = {
+        //   str: "Hello World",
+        //   num: 12,
+        //   arr: [123, true, "hello"],
+        //   object1: { name: "param", age: 25 },
+        // };
 
+        // console.log(mix2);
+        // console.log(mix2.str);
+        // console.log(mix2.arr[1]);
+
+        // console.log(mix2.object1.name);
       //   console.log(mix2.arr[1]);
       //   console.log(mix2.object1.name);
 
@@ -94,9 +120,131 @@
 
       //   hoisting
 
-      let a = 12;
+      // const x = 5;
+      // {
+      //   console.log(x);
+      // }
 
-      window.alert(a);
+      // {
+      //   var x = 5;
+      //   // global scope
+      //   console.log(x);
+      // }
+      // console.log(x);
+
+      // let const
+      // block scope
+
+      // var x =5
+
+      // {
+      //   let z = x
+      //   console.log(z);
+      //   // 5
+      //   {
+      //     let y = 10
+      //     console.log(z);
+      //     // undefined ,5
+      //   }
+      //   console.log(y);
+      //   // undefined,
+      // }
+      // console.log(x);
+      // // 5
+
+      // const x = 10
+
+      // {
+      //   const x = 20
+      //   console.log(x);
+      //   // 10 ,20
+      //   {
+      //     let y = 10
+      //     {
+      //       {
+      //         {
+      //           {
+      //             {
+      //               let a=50
+      //             }
+      //           }
+      //         }
+      //         console.log(x);
+      //         // 20,undefined
+      //       }
+      //       // console.log(a);
+      //       // 50,undefined
+
+      //     }
+      //   }
+      //   // console.log(z);
+      //   // undefined
+      //   let y = 20
+      // }
+      // console.log(x);
+      // 10,reference error, 20
+
+      // const x = "John";
+
+      // {
+      //   {
+      //     let x = "jane"
+      //   }
+      //   console.log(x);
+      //   let y = 20;
+      // }
+
+      // function greeting() {
+      //   console.log("Hello");
+      // }
+
+      // greeting();
+
+      // function scope
+      // global
+      // block scope
+
+      // function a() {
+      //   let name = "John";
+      // }
+
+      // {
+      //   a();
+      //   // let name = "John";
+      //   // console.log(name);
+      //   let name = "max";
+      //   console.log(name);
+      // }
+
+      // let x = 20
+
+      // function a(){
+      //   let x = 30
+      // }
+      // a()
+      // console.log(x);
+      // 20,30,20,20,20
+
+      // const x = 20;
+
+      // {
+      //   const x = 10
+      //   console.log(x);
+      //   // undefined,refeence error,
+
+      //   function a() {
+      //     b();
+      //   }
+
+      //   function b() {
+      //     a();
+      //     let x = 30;
+      //   }
+
+      // }
+
+      // console.log(x);
+      //  20 ,30,undefined,refence erorr,will not run
     </script>
   </body>
 </html>
